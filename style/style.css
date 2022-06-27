@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+:root{
+    --text-1: var(--gray-9);
+    --gradient: var(--gradient-7);
+    --backround: var(--gray-0);
+    --gradient-2: var(--indigo-4);
+}
+body {
+    font-family: var(--font-sans);
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.list {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__link {
+    text-decoration: none;
+    padding: 23px 14px;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--text-1);
+    display: block;
+}
+
+.header__top {
+    background: var(--gradient);
+}
+
+.header__link:hover {
+    background: #fff;
+    color: var(--gray-9);
+    transition: 0.5s;
+}
+
+.header__bottom {
+    background: url(../image/Nike-Adapt-BB\ 1.jpg)no-repeat center/cover;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-title {
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 50px;
+    line-height: 59px;
+}
+
+.subtitle {
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.subtitle span {
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.left-snicers {
+    width: 540px;
+    background: var(--backround);
+    border-radius: 6px;
+    padding: 15px;
+    margin-right: 30px;
+    box-shadow: var(--shadow-4);
+}
+
+section {
+    background: var(--gradient-2);
+}
+
+.title {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: var(--font-size-4);
+    line-height: 26px;
+    color: var(--text-1);
+}
+
+.desc {
+    font-size: 16px;
+    line-height: 19px;
+    color: #9B9B9B;
+    text-align: left;
+}
+
+.right-snicers__inner {
+    background: var(--backround);
+    border-radius: 6px;
+    width: 255px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: var(--shadow-4);
+}
+
+.wrapper-box {
+    display: flex;
+    transform: translateY(-40px);
+}
+
+.right-snicers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.right-snicers__inner:nth-child(1),
+.right-snicers__inner:nth-child(2) {
+    margin-bottom: 30px;
+}
+
+footer {
+    padding-top: 37px;
+    padding-bottom: 57px;
+    background: var(--gradient);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+}
+
+.footer__input {
+    padding: 8px;
+    outline: none;
+    background: #FFFFFF;
+    border-radius: 6px;
+    border: none;
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 18px;
+    font-family: 'Roboto';
+    box-shadow: var(--shadow-2);
+}
+
+.footer__input::placeholder {
+    color: #9B9B9B;
+}
+
+.footer__textarea {
+    outline: none;
+    resize: none;
+    background: #FFFFFF;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    max-height: 90px;
+    font-size: 18px;
+    line-height: 18px;
+    font-family: 'Roboto';
+    padding: 8px;
+    box-shadow: var(--shadow-2);
+}
+
+.footer__textarea::placeholder {
+    color: #9B9B9B;
+}
+
+.btn {
+    background: #544294;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    line-height: 18px;
+    color: #FFFFFF;
+    padding: 5px 0;
+    box-shadow: var(--shadow-2);
+}
+
+.footer__box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer__nav {
+    display: flex;
+}
+
+.footer__list:nth-child(1) {
+    margin-right: 60px;
+}
+
+.footer__list {
+    list-style: none;
+}
+
+.footer__items {
+    margin-bottom: 10px;
+}
+
+.footer__link {
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    transition: color 0.5s;
+    text-decoration: none;
+}
+.footer__link:hover{
+    color: #D57300;
+}
+.menu-icon{
+    display: none;
+}
